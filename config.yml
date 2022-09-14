@@ -1,3 +1,182 @@
-baseURL: http://example.org/
-languageCode: en-us
-title: My New Hugo Site
+baseURL: https://meleu.dev/
+title: meleu.dev
+
+theme: PaperMod
+
+###############################################################################
+# multilingual configs
+# https://www.regisphilibert.com/blog/2018/08/hugo-multilingual-part-1-managing-content-translation/
+#
+# TODO: a página de busca da língua secundária não está funcionando!!!!
+#
+###############################################################################
+defaultContentLanguage: en
+languages:
+  en:
+    languageName: English
+    weight: 1
+# portuguese configurations
+################################################################################
+  pt:
+    languageName: "Portugues"
+    weight: 2
+    profileMode:
+      enabled: true
+      ####################################################################
+      subtitle: |
+        **Engenheiro de Software Full Stack**
+
+        compartilhando o que sei e aprendendo em público
+      ####################################################################
+      imageUrl: "img/avatar.png"
+      imageTitle: "avatar do meleu"
+      buttons:
+        - name: "blog"
+          url: "/archive"
+        - name: "sobre mim"
+          url: "/about"
+        - name: "meleu.sh"
+          url: "https://meleu.sh/"
+    menu:
+      main:
+        - identifier: historico
+          name: histórico
+          url: ../historico/
+          weight: 10
+        - identifier: tags
+          name: tags
+          url: /tags/
+          weight: 20
+        - identifier: busca
+          name: busca
+          url: ../busca/
+          weight: 30
+        - identifier: sobre
+          name: sobre
+          url: /about/
+          weight: 99
+    editPost:
+      URL: "https://github.com/meleu/blog/edit/master/content"
+      text: "✏️ Sugerir mudanças neste artigo"
+      appendFilePath: true
+# end of multilingual configurations
+################################################################################
+
+buildDrafts: false
+buildFuture: false
+enableEmoji: true
+
+# todos os arquivos em 'content/posts/' serão servidos na raiz
+permalinks:
+  posts: /:filename
+
+# servindo o diretório 'img/' como 'static/img/'
+# só acertei essa config vendo os exemplos desse artigo aqui:
+# https://geeksocket.in/posts/hugo-modules/
+module:
+  mounts:
+    - source: img/
+      target: static/img/
+
+###############################################################################
+# top right menu
+# ##############
+# https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-faq/#add-menu-to-site
+# https://gohugo.io/content-management/menus/
+###############################################################################
+menu:
+  main:
+    - identifier: archive
+      name: archive
+      url: /archive/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: search
+      name: search
+      url: /search/
+      weight: 30
+    - identifier: about
+      name: about
+      url: /about/
+      weight: 99
+# fim da config do menu #######################################################
+
+params:
+  env: production
+  defaultTheme: auto # dark or light?
+  description: "meleu's personal website"
+  author: meleu
+  assets:
+    favicon: "img/favicon.ico"
+  showShareButtons: true
+  showReadingTime: true
+  showToc: true
+  tocOpen: false
+  showCodeCopyButtons: true
+  showBreadCrumbs: true
+  showPostNavLinks: true
+
+  # configurations for profile mode (dev landing page)
+  profileMode:
+    enabled: true
+    ######################################################################
+    subtitle: |
+      **Full Stack Software Engineer**
+
+      sharing what I know and learning in public
+    ######################################################################
+    imageUrl: "img/avatar.png"
+    imageTitle: "meleu's avatar"
+    buttons:
+      - name: "blog"
+        url: "/archive"
+      - name: "about me"
+        url: "/about"
+      - name: "meleu.sh"
+        url: "https://meleu.sh/"
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/meleu"
+    - name: twitter
+      url: "https://twitter.com/meleushell"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/meleu/"
+    - name: rss
+      url: "index.xml"
+
+  # link para edição
+  # https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/#edit-link-for-posts
+  #############################################################################
+  editPost:
+    URL: "https://github.com/meleu/blog/edit/master/content"
+    text: "✏️ Suggest changes in this article"
+    appendFilePath: true
+  #############################################################################
+  # config de busca
+  # https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/#search-page
+  #############################################################################
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys:
+      - title
+      - permalink
+      - summary
+      - content
+
+
+# config de busca
+# https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/#search-page
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
