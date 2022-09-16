@@ -1,6 +1,5 @@
 baseURL: https://meleu.dev/
 title: meleu.dev
-
 theme: PaperMod
 
 ###############################################################################
@@ -31,10 +30,10 @@ languages:
       imageUrl: "img/avatar.png"
       imageTitle: "avatar do meleu"
       buttons:
-        - name: "blog"
-          url: "/archive"
         - name: "sobre mim"
           url: "/about"
+        - name: "blog"
+          url: "/archive"
         - name: "meleu.sh"
           url: "https://meleu.sh/"
     menu:
@@ -86,9 +85,9 @@ module:
 ###############################################################################
 menu:
   main:
-    - identifier: archive
-      name: archive
-      url: /archive/
+    - identifier: archives
+      name: archives
+      url: /archives/
       weight: 10
     - identifier: tags
       name: tags
@@ -123,6 +122,7 @@ params:
   profileMode:
     enabled: true
     ######################################################################
+    title: "Hi! 👋 I'm meleu."
     subtitle: |
       **Full Stack Software Engineer**
 
@@ -131,10 +131,10 @@ params:
     imageUrl: "img/avatar.png"
     imageTitle: "meleu's avatar"
     buttons:
-      - name: "blog"
-        url: "/archive"
       - name: "about me"
         url: "/about"
+      - name: "blog"
+        url: "/archive"
       - name: "meleu.sh"
         url: "https://meleu.sh/"
 
