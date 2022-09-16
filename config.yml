@@ -12,16 +12,18 @@ theme: PaperMod
 defaultContentLanguage: en
 languages:
   en:
-    languageName: English
+    languageName: ":us::gb:"
+    languageAltTitle: "English"
     weight: 1
 # portuguese configurations
 ################################################################################
   pt:
-    languageName: "Portugues"
+    languageName: ":flag_br::flag_pt:"
     weight: 2
     profileMode:
       enabled: true
       ####################################################################
+      title: meleu
       subtitle: |
         **Engenheiro de Software Full Stack**
 
@@ -87,7 +89,7 @@ menu:
   main:
     - identifier: archives
       name: archives
-      url: /archives/
+      url: /archive/
       weight: 10
     - identifier: tags
       name: tags
@@ -110,6 +112,7 @@ params:
   author: meleu
   assets:
     favicon: "img/favicon.ico"
+  displayFullLangName: true
   showShareButtons: true
   showReadingTime: true
   showToc: true
@@ -122,7 +125,7 @@ params:
   profileMode:
     enabled: true
     ######################################################################
-    title: "Hi! 👋 I'm meleu."
+    title: meleu
     subtitle: |
       **Full Stack Software Engineer**
 

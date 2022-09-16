@@ -13,3 +13,7 @@ dg-publish: false
 - [ ] why leaving DevOps to go for WebDev?
 - [x] the best way I found to learn Ruby
 - [x] why is exercism so cool
+
+🇧🇷
+
+🇺🇸🇬🇧
