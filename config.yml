@@ -35,7 +35,7 @@ languages:
         - name: "sobre mim"
           url: "/about"
         - name: "blog"
-          url: "/archive"
+          url: "/pt/posts"
         - name: "meleu.sh"
           url: "https://meleu.sh/"
     menu:
@@ -137,7 +137,7 @@ params:
       - name: "about me"
         url: "/about"
       - name: "blog"
-        url: "/archive"
+        url: "/posts"
       - name: "meleu.sh"
         url: "https://meleu.sh/"
 

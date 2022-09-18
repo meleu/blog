@@ -6,6 +6,7 @@ dg-publish: false
 
 - [ ] criar uma página About completona (inspiração [tania.dev](https://tania.dev/me/))
 - [ ] usar o domínio meleu.dev
+- [ ] submiter PR para atualizar links para traduções (swyx)
 
 
 ## articles to write
@@ -14,6 +15,3 @@ dg-publish: false
 - [x] the best way I found to learn Ruby
 - [x] why is exercism so cool
 
-🇧🇷
-
-🇺🇸🇬🇧
