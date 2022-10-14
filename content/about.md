@@ -1,5 +1,5 @@
 ---
-title: "About meleu.dev"
+title: "About meleu"
 layout: "single"
 ---
 
@@ -7,9 +7,9 @@ layout: "single"
 
 I'm a Software Engineer and an [open source enthusiast](https://github.com/meleu).
 
-Currently working as a DevOps Specialist but [migrating to Web Development](from-devops-to-webdev.md).
+Currently working as a [DevOps Specialist](https://www.linkedin.com/in/meleu/).
 
-A linux nerd since the late 90s, I live in the terminal and write about command line sorcery (in [Portuguese](https://meleu.sh/) and [English](https://meleu.sh/en/)).
+A linux nerd since the late 90s, I live in the terminal and write about command line sorcery and shell-scripting (in [Portuguese](https://meleu.sh/) and [English](https://meleu.sh/en/)).
 
 Big retrograming fan. Between 2016-2021 I dedicated a big portion of my time to open source projects related to this hobby (mainly [RetroAchievements](https://retroachievements.org)).
 
@@ -34,7 +34,7 @@ In RetroAchievements, as part of the project's leadership, I became some sort of
 
 Since 2019, I started to manage Linux servers for a few customers/friends and also launched the <https://meleu.sh/> website, sharing my knowledge about shell scripting (initially in Portuguese).
 
-In 2021 I started my career as DevOps Engineer, mainly handling CI/CD pipelines, and finally left the oil industry. During that time, and while reading *The DevOps Handbook*, I realized how beneficial it was for me to have a broad experience with industrial processes. It's a highly valuable knowledge to have in the DevOps world.
+In 2021 I finally left the oil industry. I started my career as DevOps Engineer, mainly handling CI/CD pipelines and deploying containerized applications with Kubernetes. During that time, and while reading *The DevOps Handbook*, I realized how beneficial it was for me to have a broad experience with industrial processes. It's a highly valuable knowledge to have in the DevOps world.
 
 
 
@@ -87,10 +87,10 @@ What I did:
 
 Documentation for the RetroAchievements project.
 
-Technologies used:
+I created this project using the following technologies:
 
 - [GitHub wiki](https://github.com/RetroAchievements/docs/wiki/), as the place where contributors can create/update contents for the website.
-- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) for converting the files from the wiki into the website
+- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) for converting the markdown files from the wiki into the website's pages.
 - [Some scripts](https://github.com/RetroAchievements/docs) I created to glue things together.
 
 
@@ -100,14 +100,17 @@ Technologies used:
 
 A monthly web-zine, bringing news about the RetroAchievements scene.
 
+I designed the website from scratch (that was my first website built from scratch).
+
 Technologies used
 
-- I designed the website from scratch (that was my first website built from scratch).
 - HTML/CSS only (I opted to not use JavaScript).
 - [Jekyll](https://jekyllrb.com/), as the Static Site Generator.
 
 
 ### RABot
+
+A Discord bot for the RetroAchievements community.
 
 - Accessible in the [RA Discord Server](https://discord.gg/dq2E4hE).
 - Code available [here](https://github.com/RetroAchievements/RABot).
